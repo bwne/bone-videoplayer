@@ -63,7 +63,7 @@ def main():
             resized_frame = scale_image(frame, new_width=100)
             h, w, _ = resized_frame.shape
             
-            ascii_frame = ""
+            bone_frame = ""
             for y in range(h):
                 for x in range(w):
                     # colors
@@ -74,11 +74,11 @@ def main():
                     char = BONE_CHARS[brightness // 25]
                     
                     # color
-                    ascii_frame += f"\033[38;2;{r};{g};{b}m{char}"
-                ascii_frame += "\n"
+                    bone_frame += f"\033[38;2;{r};{g};{b}m{char}"
+                bone_frame += "\n"
             
             # for settings
-            sys.stdout.write("\033[H" + ascii_frame + "\033[0m")
+            sys.stdout.write("\033[H" + bone_frame + "\033[0m")
             sys.stdout.flush()
 
             # FPS
