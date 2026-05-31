@@ -1,13 +1,13 @@
-# 🎬 Color ASCII Video Player (bone-videoplayer)
+# 🎬 Color Bone Video Player
 
-This project allows you to play any YouTube video directly in your terminal as **24-bit color ASCII art** without downloading the file. It streams the video in real-time using Python, OpenCV, and `yt-dlp`.
+This project allows you to play any YouTube video directly in your terminal as **24-bit color Bone art** without downloading the file. It streams the video in real-time using Python, OpenCV, and `yt-dlp`.
 
 ---
 
 ## 🚀 Features
 
 * **Real-time YouTube Streaming:** Play videos instantly via URL without any manual downloads.
-* **TrueColor (24-bit) Support:** Unlike traditional black-and-white ASCII players, this reads the original RGB channels of each pixel and renders them perfectly in the terminal.
+* **TrueColor (24-bit) Support:** Unlike traditional black-and-white Bone  players, this reads the original RGB channels of each pixel and renders them perfectly in the terminal.
 * **Flicker-Free Rendering:** Uses advanced ANSI escape codes instead of standard screen-clearing commands (`cls`/`clear`) for a smooth viewing experience.
 * **Aspect Ratio Correction:** Accounts for the vertical stretching of terminal fonts to prevent the video from looking distorted.
 
